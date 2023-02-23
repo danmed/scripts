@@ -73,7 +73,7 @@ $(ColorBlue 'Choose an option:') "
 		4) update_upgrade ; menu ;;
 	        5) all_checks ; menu ;;
 		0) exit 0 ;;
-		*) echo -e $red"Wrong option."$clear; WrongCommand;;
+#		*) echo -e $red"Wrong option."$clear; WrongCommand;;
         esac
 }
 # Call the menu function
