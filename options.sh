@@ -1,0 +1,10 @@
+clear
+echo "Copy paste one of the below : "
+echo ""
+echo "Update and Upgrade : apt update && apt upgrade -y"
+echo ""
+echo "Install Docker : wget -O https://dlnk.co.uk/docker | bash"
+echo ""
+echo "Install Portainer Agent : wget -O https://dlnk.co.uk/portaineragent | bash"
+echo ""
+echo "Enable SSH Root Access : wget -O https://dlnk.co.uk/ssh | bash"
