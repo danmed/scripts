@@ -1,7 +1,7 @@
 clear
 echo " Updating and upgrading :"
 echo ""
-apt update && apt uprade -y
+apt update && apt upgrade -y
 echo ""
 echo "Installing Docker :"
 echo ""
