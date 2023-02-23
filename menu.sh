@@ -27,7 +27,15 @@ function enable_root_ssh_access() {
 	wget -O - https://dlnk.co.uk/ssh.sh | bash
     echo ""
     }
+function update_upgrade() {
+    echo ""
+	echo "Updating and Upgrading"
+    echo ""
+	apt udpate && apt upgrade -y
+    echo ""
+    }
 function all_checks() {
+        update_upgrade
 	install_docker
 	install_portainer_agent
 	enable_root_ssh_access
@@ -53,7 +61,8 @@ My First Menu
 $(ColorGreen '1)') Install Docker
 $(ColorGreen '2)') Install Portainer Agent
 $(ColorGreen '3)') Enable SSH Root Access 
-$(ColorGreen '4)') Do All
+$(ColorGreen '4)') Update and Upgrade
+$(ColorGreen '5)') Do All
 $(ColorGreen '0)') Exit
 $(ColorBlue 'Choose an option:') "
         read a
@@ -61,7 +70,8 @@ $(ColorBlue 'Choose an option:') "
 	        1) install_docker ; menu ;;
 	        2) install_portainer_agent ; menu ;;
 	        3) enable_ssh_root_access ; menu ;;
-	        4) all_checks ; menu ;;
+		4) update_upgrade ; menu ;;
+	        5) all_checks ; menu ;;
 		0) exit 0 ;;
 		*) echo -e $red"Wrong option."$clear; WrongCommand;;
         esac
