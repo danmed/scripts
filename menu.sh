@@ -1,5 +1,5 @@
 #!/bin/bash
-apt update && apt upgrade && apt install dialog -y
+apt update && apt upgrade -y && apt install dialog -y
 HEIGHT=15
 WIDTH=40
 CHOICE_HEIGHT=4
