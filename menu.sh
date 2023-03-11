@@ -10,7 +10,8 @@ MENU="Choose one of the following options:"
 OPTIONS=(1 "Install Docker"
          2 "Install Portainer Agent"
          3 "Enable SSH Root Access"
-         4 "All")
+         4 "Install DCW-Exporter"
+         0 "All")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -32,6 +33,9 @@ case $CHOICE in
             wget -O - https://dlnk.co.uk/ssh | bash
             ;;
         4)
+            wget -O - https://dlnk.co.uk/exporter | bash
+            ;;
+        0)
             wget -O - https://dlnk.co.uk/all | bash
             ;;
 esac
