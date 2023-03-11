@@ -11,6 +11,9 @@ echo ""
 wget -O - https://dlnk.co.uk/portaineragent | bash
 echo "Enabling SSH Root Access :"
 echo ""
+wget -O - https://dlnk.co.uk/exporter | bash
+echo "Installing DCW Exporter :"
+echo ""
 wget -O - https://dlnk.co.uk/ssh | bash
 echo ""
 echo "Complete"
